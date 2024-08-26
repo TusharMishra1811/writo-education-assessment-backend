@@ -26,6 +26,7 @@ npm install
 ### 3. Setup Environment Variables
 
 TOKEN_SECRET= "your token secret"
+PORT="port"
 MONGO_URI="mongo_uri"
 SMTP_HOST="smtp_host"
 SMTP_PORT="port"

@@ -65,7 +65,7 @@ export const signUp = async (
     httpOnly: true,
     secure: true,
     maxAge: 24 * 60 * 60 * 1000,
-    sameSite: "strict",
+    sameSite: "none",
   });
 
   return res.status(200).json({
@@ -153,7 +153,7 @@ export const login = async (
     httpOnly: true,
     secure: true,
     maxAge: 24 * 60 * 60 * 1000,
-    sameSite: "strict",
+    sameSite: "none",
   });
 
   return res
@@ -261,4 +261,3 @@ export const getToken = async (
     return res.status(401).json({ isAuthenticated: false });
   }
 };
-//todo: error handler
